@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <title>ToDesktop</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex bg-white justify-between items-center">
+    <a href="#" id="brand" class="flex ga-2 items-center">
+      <img src="../assets/asset 0.png" alt="" class="object-cover max-w-12 max-h-12">
+      <span class="text-lg font-medium">ToDesktop</span>
+    </a>
+
+    <div id="nav-menu" class="gap-2 hidden md:flex">
+      <a href="#" class="hover:text-primary">Pricing</a>
+      <a href="#" class="hover:text-primary">Docs</a>
+      <a href="#" class="hover:text-primary">Changlog</a>
+      <a href="#" class="hover:text-primary">Blogs</a>
+      <a href="#" class="hover:text-primary">Login</a>
+    </div>
+
+    <button
+      class="hidden md:flex items-center gap-2 border-1 border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 cursor-pointer">
+      <img src="/assets/asset 1.svg" alt="">
+      Electron Developer
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <button class="p-2 md:hidden" onclick="handleMenu()">
+      <i class="fa-solid fa-bars" class="text-gray-600"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden z-10 md:hidden fixed bg-white inset-0 p-3">
+
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" id="brand" class="flex ga-2 items-center">
+          <img src="../assets/asset 0.png" alt="" class="object-cover max-w-12 max-h-12">
+          <span class="text-lg font-medium">ToDesktop</span>
+        </a>
+
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+          <i class="fa-solid fa-xmark" class="text-gray-600"></i>
+        </button>
+      </div>
+
+      <div class="mt-6">
+        <a href="#" class="hover:bg-gray-50 block rounded-lg m-3 p-3">Pricing</a>
+        <a href="#" class="hover:bg-gray-50 block rounded-lg m-3 p-3">Docs</a>
+        <a href="#" class="hover:bg-gray-50 block rounded-lg m-3 p-3">Changlog</a>
+        <a href="#" class="hover:bg-gray-50 block rounded-lg m-3 p-3">Blogs</a>
+        <a href="#" class="hover:bg-gray-50 block rounded-lg m-3 p-3">Login</a>
+      </div>
+
+      <div class="h-[1px] bg-gray-300"></div>
+
+      <button class="mt-6 w-full flex items-center gap-2 px-6 py-4 rounded-lg hover:bg-gray-50 cursor-pointer">
+        <img src="/assets/asset 1.svg" alt="">
+        Electron Developer
+      </button>
+    </div>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/e87a03bf06.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
